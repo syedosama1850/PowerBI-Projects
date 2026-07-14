@@ -21,7 +21,7 @@ Active Customers, Avg Revenue per Customer, Repeat Customer %, and Top 10 Concen
 ## Page 4: Operations & Shipping
 
 ![Operations](operation-analysis.png)
-Avg Delivery Days, Late Shipment %, Total Freight, and Freight as a % of Revenue. A gauge shows on-time delivery rate against a 90% target, a waterfall chart breaks down freight cost by country, there's a bounded 8-quarter trend of delivery speed, and a table listing the most delayed shipments with the exact number of days late.
+ Avg Delivery Days, Late Shipment %, Total Freight, and Freight as a % of Revenue. A gauge shows on-time delivery rate against a 90% target, a waterfall chart breaks down freight cost by country, there's a bounded 8-quarter trend of delivery speed, and a table listing the most delayed shipments with the exact number of days late.
 
 ### Few Technical Notes
 Every KPI's year-over-year delta had to account for what happens when there's no prior year to compare against, since 1996 is the first year in the dataset. I also ran into a subtle bug where DAX subtraction treats a blank as zero instead of staying blank, which made deltas look real even when there was no prior-year data at all. Took a while to track down.
